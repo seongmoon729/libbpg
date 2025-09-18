@@ -177,7 +177,7 @@ LIBS:=
 else
 LIBS:=-lrt
 endif # !CONFIG_APPLE 
-LIBS+=-lpng -ljpeg -lrt -lm -lpthread -lnuma
+LIBS+=-lm -lpthread
 
 BPGDEC_LIBS:=-lpng $(LIBS)
 BPGENC_LIBS+=-lpng -ljpeg $(LIBS)
